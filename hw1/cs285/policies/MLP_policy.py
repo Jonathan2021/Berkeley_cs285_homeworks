@@ -87,7 +87,7 @@ class MLPPolicy(BasePolicy):
         # HINT1: you will need to call self.sess.run
         # HINT2: the tensor we're interested in evaluating is self.sample_ac
         # HINT3: in order to run self.sample_ac, it will need observation fed into the feed_dict
-        return self.sess.run(self.sample_ac, feed_dic={self.observations_pl: obs})
+        return self.sess.run(self.sample_ac, feed_dict={self.observations_pl: observation})
         # END TODO
 
     # update/train this policy
